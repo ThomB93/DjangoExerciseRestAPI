@@ -25,7 +25,7 @@ SECRET_KEY = 'y4)zb)_j@yi#b$t++bqfhod2aaxu*_8dcfr70g2g^4(_7rw^il'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['178.62.203.48','localhost']
+ALLOWED_HOSTS = ['178.62.203.48','api.jcu.dk','localhost']
 
 
 # Application definition
