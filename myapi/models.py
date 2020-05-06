@@ -8,10 +8,10 @@ class Exercise(models.Model):
     Sets = models.IntegerField()
     Reps = models.CharField(max_length=5)
     RestTime = models.IntegerField()
-    ManagedReps = models.IntegerField(blank=True)
-    ManagedSets = models.IntegerField(blank=True)
-    CompletedDate = models.CharField(max_length=20, blank=True)
-    IsCompleted = models.BooleanField(blank=True)
+    ManagedReps = models.IntegerField(blank=True, null=True)
+    ManagedSets = models.IntegerField(blank=True, null=True)
+    CompletedDate = models.CharField(max_length=20, blank=True, null=True)
+    IsCompleted = models.BooleanField(blank=True, null=True)
 
     def str(self):
         return self.Title
