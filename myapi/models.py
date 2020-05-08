@@ -21,6 +21,7 @@ class ExerciseList(models.Model):
     Id = models.AutoField(primary_key=True)
     Title = models.CharField(max_length=100)
     Exercises = models.ManyToManyField(Exercise)
+    IsCompleted = models.BooleanField(blank=True, default=False)
 
     def str(self):
         return self.Title
