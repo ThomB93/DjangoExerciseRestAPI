@@ -10,7 +10,7 @@ class Exercise(models.Model):
     RestTime = models.IntegerField()
     ManagedReps = models.IntegerField(blank=True, null=True)
     ManagedSets = models.IntegerField(blank=True, null=True)
-    CompletedDate = models.DateCharField(max_length=20, blank=True, null=True)
+    CompletedDate = models.CharField(max_length=20, blank=True, null=True)
     IsCompleted = models.BooleanField(blank=True, default=False)
 
     def str(self):
